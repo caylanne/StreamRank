@@ -184,3 +184,291 @@ footer {
   padding-bottom: 4px;
 
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #1b1b1b 0%, #012e46 100%);
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 800px;
+}
+
+header {
+  text-align: center;
+  margin-top: 40px;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+header h1 {
+  font-size: 42px;
+  color: #0184ff;
+  margin-bottom: 6px;
+}
+
+header p {
+  color: #ccc;
+  font-weight: 300;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.menu a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #0184ff;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 80px;
+  animation: fadeUp 1.5s ease forwards;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(73, 151, 240, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-bottom: 2px solid #0184ff;
+}
+
+.info {
+  padding: 16px 19px;
+  flex-grow: 1;
+}
+
+.info h2 {
+  font-size: 21px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.genero {
+  font-size: 14px;
+  color: #0184ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.descricao {
+  font-size: 14px;
+  color: #bbb;
+  line-height: 1.5;
+  margin-bottom: 13px;
+  letter-spacing: 0.8px;
+  text-align: justify;
+}
+
+.nota {
+  display: inline-block;
+  background: #0184ff;
+  padding: 6px 11px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.catalogo {
+  display: none;
+}
+
+.catalogo.ativo {
+  display: grid;
+}
+
+.posicao {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #0184ff;
+  color: #fff;
+  padding: 6px 12px;
+  border-bottom-right-radius: 12px;
+  font-weight: bold;
+  z-index: 10;
+  font-size: 16px;
+}
+
+.card {
+  position: relative;
+}
+
+.menu a.active {
+  color: #0184ff;
+  font-weight: 700;
+  border-bottom: 3px solid #0184ff;
+  padding-bottom: 4px;
+}
+
+@media (max-width: 1200px) {
+    .catalogo {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 900px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 26px;
+    }
+
+    .menu ul {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 700px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .card img {
+        height: 260px;
+    }
+
+    .info h2 {
+        font-size: 18px;
+    }
+
+    .descricao {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 550px) {
+    .catalogo {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        width: 95%;
+    }
+
+    .card img {
+        height: 260px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .menu ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .menu a {
+        display: block;
+        padding: 6px;
+        border-radius: 6px;
+    }
+
+    .menu a.active {
+        border-bottom: 0;
+        background: #0184ff;
+        color: #fff;
+    }
+}
+
+@media (max-width: 400px) {
+    .card img {
+        height: 220px;
+    }
+
+    .info h2 {
+        font-size: 17px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .posicao {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+
