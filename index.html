@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/LOGO2-CheckPoint.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/catalogo.css">
+    <title>Catálogo | StreamRank</title>
+
+    <style>
+        .posicao {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #ff4655;
+            color: #fff;
+            padding: 6px 12px;
+            border-bottom-right-radius: 12px;
+            font-weight: 700;
+            z-index: 20;
+            font-size: 16px;
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .catalogo {
+            display: none;
+        }
+
+        .catalogo.ativo {
+            display: grid;
+        }
+
+        .menu a.active {
+            color: #4c05f1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>StreamRank</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" data-cat="netflix" class="active">Netflix</a></li>
+                <li><a href="#" data-cat="prime">Prime Video</a></li>
+                <li><a href="#" data-cat="disney">Disney+</a></li>
+                <li><a href="#" data-cat="max">HBO Max</a></li>
+                <li><a href="#" data-cat="paramount">Paramount+</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="catalogo ativo" id="netflix">
+
+        <article class="card">
+            <div class="posicao">1º</div>
+            <img src="assets/img/strangerthings.jpeg">
+            <div class="info">
+                <h2>Stranger Things</h2>
+                <p class="genero">Ficção / Terror</p>
+                <p class="descricao">Um grupo de amigos enfrenta fenômenos sobrenaturais ligados ao Mundo Invertido.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">2º</div>
+            <img src="assets/img/round6.webp">
+            <div class="info">
+                <h2>Round 6</h2>
+                <p class="genero">Suspense / Ação</p>
+                <p class="descricao">Jogadores arriscam a vida em jogos mortais para ganhar um prêmio bilionário.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">3º</div>
+            <img src="assets/img/lacasadepapel.png">
+            <div class="info">
+                <h2>La Casa de Papel</h2>
+                <p class="genero">Ação / Crime</p>
+                <p class="descricao">Um grupo executa assaltos épicos comandados pelo misterioso Professor.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">4º</div>
+            <img src="assets/img/thewitcher.jpg">
+            <div class="info">
+                <h2>The Witcher</h2>
+                <p class="genero">Fantasia</p>
+                <p class="descricao">Geralt de Rívia enfrenta monstros e seu próprio destino em um continente caótico.
+                </p>
+            </div>
+        </article>
+
+
+    </main>
+
+    <main class="catalogo" id="prime">
+
+        <article class="card">
+            <div class="posicao">1º</div>
+            <img src="assets/img/theboys.webp">
+            <div class="info">
+                <h2>The Boys</h2>
+                <p class="genero">Ação</p>
+                <p class="descricao">Um grupo luta contra super-heróis corruptos controlados por uma grande corporação.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">2º</div>
+            <img src="assets/img/fallout.webp">
+            <div class="info">
+                <h2>Fallout</h2>
+                <p class="genero">Ficção</p>
+                <p class="descricao">Após um apocalipse nuclear, sobreviventes tentam reconstruir o mundo.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">3º</div>
+            <img src="assets/img/invincible.webp">
+            <div class="info">
+                <h2>Invincible</h2>
+                <p class="genero">Heróis</p>
+                <p class="descricao">Um jovem herói tenta entender seus poderes e o legado sombrio de seu pai.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">4º</div>
+            <img src="assets/img/reacher.webp">
+            <div class="info">
+                <h2>Reacher</h2>
+                <p class="genero">Ação</p>
+                <p class="descricao">Um ex-militar se envolve em conspirações enquanto resolve crimes pelo país.</p>
+            </div>
+        </article>
+
+
+    </main>
+
+    <main class="catalogo" id="disney">
+
+        <article class="card">
+            <img src="assets/img/mandalorian.jpg">
+            <div class="info">
+                <h2>The Mandalorian</h2>
+                <p class="genero">Sci-Fi</p>
+                <p class="descricao">Um caçador de recompensas viaja pela galáxia enquanto protege o pequeno Grogu.</p>
+                <span class="nota">1º</span>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">1º</div>
+            <img src="assets/img/mandalorian.jpg">
+            <div class="info">
+                <h2>The Mandalorian</h2>
+                <p class="genero">Sci-Fi</p>
+                <p class="descricao">Um caçador de recompensas viaja pela galáxia enquanto protege o pequeno Grogu.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">2º</div>
+            <img src="assets/img/loki.jpg">
+            <div class="info">
+                <h2>Loki</h2>
+                <p class="genero">Fantasia</p>
+                <p class="descricao">Loki enfrenta a AVT e descobre segredos sobre o multiverso.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">3º</div>
+            <img src="assets/img/wanda.jpg">
+            <div class="info">
+                <h2>WandaVision</h2>
+                <p class="genero">Fantasia</p>
+                <p class="descricao">Wanda cria uma realidade alternativa enquanto lida com sua dor.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">4º</div>
+            <img src="assets/img/what.jpg">
+            <div class="info">
+                <h2>What If...?</h2>
+                <p class="genero">Anime / Heróis</p>
+                <p class="descricao">Realidades alternativas exploram diferentes possibilidades no universo Marvel.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <main class="catalogo" id="max">
+
+        <article class="card">
+            <div class="posicao">1º</div>
+            <img src="assets/img/got.jpg">
+            <div class="info">
+                <h2>Game of Thrones</h2>
+                <p class="genero">Fantasia</p>
+                <p class="descricao">Casas nobres disputam o Trono de Ferro em uma guerra épica.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">2º</div>
+            <img src="assets/img/euphoria.jpg">
+            <div class="info">
+                <h2>Euphoria</h2>
+                <p class="genero">Drama</p>
+                <p class="descricao">Jovens lidam com relações, vícios e crises emocionais.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">3º</div>
+            <img src="assets/img/tlou.jpg">
+            <div class="info">
+                <h2>The Last of Us</h2>
+                <p class="genero">Drama / Ficção</p>
+                <p class="descricao">Joel e Ellie cruzam os EUA devastados por uma pandemia fúngica.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">4º</div>
+            <img src="assets/img/friends.jpg">
+            <div class="info">
+                <h2>Friends</h2>
+                <p class="genero">Comédia</p>
+                <p class="descricao">Seis amigos vivendo altos e baixos da vida em Nova York.</p>
+            </div>
+        </article>
+
+
+    </main>
+
+    <main class="catalogo" id="paramount">
+
+
+        <article class="card">
+            <div class="posicao">1º</div>
+            <img src="assets/img/yellowstone.jpg">
+            <div class="info">
+                <h2>Yellowstone</h2>
+                <p class="genero">Drama</p>
+                <p class="descricao">A família Dutton luta para manter suas terras contra ameaças externas.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">2º</div>
+            <img src="assets/img/halo.webp">
+            <div class="info">
+                <h2>Halo</h2>
+                <p class="genero">Sci-Fi</p>
+                <p class="descricao">Master Chief enfrenta uma guerra intergaláctica contra os Covenant.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">3º</div>
+            <img src="assets/img/star.jpg">
+            <div class="info">
+                <h2>Star Trek: Discovery</h2>
+                <p class="genero">Sci-Fi</p>
+                <p class="descricao">A nave Discovery explora novas fronteiras da galáxia.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="posicao">4º</div>
+            <img src="assets/img/dexter.webp">
+            <div class="info">
+                <h2>Dexter</h2>
+                <p class="genero">Crime</p>
+                <p class="descricao">Um analista forense vive secretamente como um vigilante serial killer.</p>
+            </div>
+        </article>
+
+
+    </main>
+
+
+    <footer>
+        <p>Desenvolvido por <strong>Caylanne Rodrigues e Vanessa Gomes.</strong></p>
+    </footer>
+
+    <script>
+        const menuLinks = document.querySelectorAll('.menu a');
+        const categorias = document.querySelectorAll('.catalogo');
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                const target = link.dataset.cat;
+
+                categorias.forEach(cat => cat.classList.remove('ativo'));
+                document.getElementById(target).classList.add('ativo');
+
+                menuLinks.forEach(l => l.classList.remove('active'));
+
+                link.classList.add('active');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
